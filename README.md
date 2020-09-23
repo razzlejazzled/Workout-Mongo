@@ -1,6 +1,6 @@
 # Workout-Mongo
 
-For this App, I was asked to build an app that used a Mongo database, Mongoose schema, and express. Some client-side code was provided, as was the user story. 
+For this App, I was asked to use a Mongo database, Mongoose schema, and express. Some client-side code was provided, as was the user story. 
 
 ## User Story
 
