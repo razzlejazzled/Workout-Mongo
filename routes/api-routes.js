@@ -11,8 +11,8 @@ module.exports = function(app){
       res.json(findResponse)
     }) 
 
-    app.post("/api/workouts", async function(req, res){
-       
+    app.put("/api/workouts/", function(req, res){
+        const workout = new Workout(body);
     })
 
     
