@@ -1,7 +1,9 @@
 const app = require("express").Router();
+const db = require("../../models");
 
-app.get("/", function(req, res){
-    res.send("Hello from the API!");
-})
+
+app.get("/workouts", async function(req, res){
+    res.json(await db.Workout.find());
+});
 
 module.exports = app;
