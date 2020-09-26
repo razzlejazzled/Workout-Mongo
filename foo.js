@@ -10,7 +10,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
 const db = require ("./models");
 
 db.Workout.find().then(dbWorkouts => {
-   const workout = dbWorkouts[0];
+   const workout = dbWorkouts[0].toJSON();
    console.log(workout);
   
 });
