@@ -15,7 +15,10 @@ app.post("/workouts", async function(req, res){
 });
 
 app.put("/workouts/:id", async function (req, res) {
-    res.json(await db.Workout.findByIdAndUpdate(req.params.id, req.body));
+    res.json(await db.Workout.findByIdAndUpdate(req.params.id, { 
+        $push: { exercises: req.body},
+    })
+    );
 })
 
 module.exports = app;
