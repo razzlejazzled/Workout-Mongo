@@ -6,6 +6,10 @@ app.get("/workouts", async function(req, res){
     res.json(await db.Workout.find());
 });
 
+app.get("/workouts/range", async function(req, res){
+    res.json(await db.Workout.find().limit(7));
+});
+
 app.post("/workouts", async function(req, res){
     res.json(await db.Workout.create(req.body));
 });
