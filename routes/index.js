@@ -8,4 +8,8 @@ app.get("/stats", function (req, res) {
     res.sendFile(path.resolve(publicDir, "stats.html"));
 });
 
+app.get("/exercise", function (req, res) {
+    res.sendFile(path.resolve(publicDir, "exercise.html"));
+});
+
 module.exports = app;
