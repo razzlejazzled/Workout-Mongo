@@ -14,4 +14,7 @@ all client-side code was provided to me as starter code. All server-side code is
 
 The site can be [viewed here](https://tranquil-reaches-02659.herokuapp.com/?id=5f6ea4d35f0b560017ab71dc)
 
+## Usage
+Users can either create a new workout or continue a previous workout. After making that selection, users will be prompted to select if their excercise was cardio or resistance based. After a user enters the information about their workout, they can either add a new excercise, or complete their workout. Selecting Dashboard in the upper left corner will take the user to a page that tracks and displays their excercise data.
+
 ![Screenshot of the app](./assets/Screenshot.png)
